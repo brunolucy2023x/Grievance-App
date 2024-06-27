@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "140398490641",
+    "project_id": "grievancecolledgeapp2",
+    "storage_bucket": "grievancecolledgeapp2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140398490641:android:6ed11c135539e130d22db0",
+        "android_client_info": {
+          "package_name": "com.GrievanceColledge.App"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140398490641-lchbu28kn4hneohgocq97vf13l7ic9r9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm6TfJ9RkhmOfsuV_1A_FmPUfDb9jPPGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140398490641-lchbu28kn4hneohgocq97vf13l7ic9r9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

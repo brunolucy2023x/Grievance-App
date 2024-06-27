@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#262527"
+
+
+    tools:context=".DrugAbuseActivity">
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Drug Abuse Activity"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:background="#ACA1A1"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+
+
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name:"
+            android:textColor="#FBFBFB"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"/>
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+
+            android:textColor="#0C0C0C"
+
+            android:background="#FBFBFB"
+            android:hint="Enter Username.."
+            android:layout_marginLeft="3dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/userAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#B71C1C"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="107dp"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="5dp"
+
+            android:text=" Location :"
+            android:textColor="#FBFBFB"
+            android:textSize="15dp" />
+        <EditText
+            android:id="@+id/userPassword"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:background="#FBFBFB"
+            android:hint="Enter current Location.."
+            android:layout_marginLeft="5dp"
+            android:inputType="textPassword" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact:"
+
+            android:textColor="#FBFBFB"
+
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp" />
+        <EditText
+            android:id="@+id/userContact"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:textColor="#FBFBFB"
+            android:background="#FBFBFB"
+            android:hint="Enter Contact No.."
+            android:layout_marginLeft="5dp"
+            android:inputType="number" />
+
+    </LinearLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+
+            android:textColor="#FBFBFB"
+            android:textSize="15dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="5dp"/>
+        <RadioButton
+            android:id="@+id/Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+
+            android:textColor="#FBFBFB"
+            android:gravity="center"
+            android:textSize="15dp"/>
+        <RadioButton
+            android:id="@+id/Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+
+            android:textColor="#FBFBFB"
+
+            android:gravity="center"
+            android:textSize="15dp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+
+            android:textColor="#FFFFFF"
+
+            android:text="Complaint To"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/SpCountry"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="5dp"
+            android:textSize="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write Complaint"
+            android:textSize="15dp"
+            android:textColor="#FBFBFB"
+            android:layout_marginLeft="5dp"/>
+        <EditText
+            android:id="@+id/usercomment"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:hint="Enter your complaint.."
+            android:textColor="#0B0B0B"
+            android:layout_marginLeft="5dp"
+            android:background="#FBFBFB"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click To Submit"
+        android:textColor="#F5FBF6"
+        android:background="#B71C1C"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
